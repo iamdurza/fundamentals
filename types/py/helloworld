@@ -6,7 +6,7 @@ import skilstak.colors as c
 def print_colored(word):
     for char in word:
       print(c.rc() + char +c.x)
-
+                            #^ , end=''
 def colored_hello():
     '''Print hello world to the console with each charecter in random colors.'''
 
