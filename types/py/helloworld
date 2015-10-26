@@ -14,7 +14,7 @@ def hello():
         print(c.clear)
         while True:
            #     old code   ------->   print(c.rc() + "Hello " + c.rc() + "World" + c.x)
-           print(colored("Hello World!"))
+           print_colored("Hello World!")
     except KeyboardInterrupt:
         exit()
 
