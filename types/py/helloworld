@@ -7,7 +7,7 @@ def print_colored(word):
     for char in word:
       print(c.rc() + char +c.x)
 
-def hello():
+def colored_hello():
     '''Print hello world to the console with each charecter in random colors.'''
 
     try:
