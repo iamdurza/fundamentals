@@ -20,10 +20,10 @@ def colored_hello():
 
 if __name__ == '__main__':    
     import sys 
-    if len(sys.argv) > 1 and sys.argv[1].startswith("c"):
-        colored_hello()
-    else:
-        hello()
+    #if len(sys.argv) > 1 and sys.argv[1].startswith("c"):
+    #    colored_hello()
+    #else:
+     #   hello()
 
 
 
