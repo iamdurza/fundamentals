@@ -19,11 +19,11 @@ def colored_hello():
         exit()
 
 if __name__ == '__main__':    
-    avimport sys 
-    #if len(sys.argv) > 1 and sys.argv[1].startswith("c"):
-    #    colored_hello()
-    #else:
-     #   hello()
+    import sys 
+    if len(sys.argv) > 1 and sys.argv[1].startswith("c"):
+        colored_hello()
+    else:
+        pass
 
 
 
