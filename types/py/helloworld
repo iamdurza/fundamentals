@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+import skilstak.colors as c
+
+
+def random_char_colors(word):
+    colored = ''
+    for char in word:
+        colored.append(c.rc() + char)
+    colored.append(c.x)
+    return colored
+
+def hello():
+'''Print hello world to the console in random colors.'''
+
+    
+    try:
+        print(c.clear)
+        while True:
+           #print(c.rc() + "Hello " + c.rc() + "World" + c.x)
+           print(colored("Hello World!"))
+    except KeyboardInterrupt:
+        exit()
+
+if __name__ == '__main__':    
+    hello()
+
+#, end=' '
