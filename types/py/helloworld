@@ -3,7 +3,7 @@
 import skilstak.colors as c
 
 
-def print_colord(word):
+def print_colored(word):
     for char in word:
       print(c.rc() + char +c.x)
 
