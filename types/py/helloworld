@@ -3,21 +3,17 @@
 import skilstak.colors as c
 
 
-def random_char_colors(word):
-    colored = ''
+def print_colord(word):
     for char in word:
-        colored.append(c.rc() + char)
-    colored.append(c.x)
-    return colored
+      print(c.rc() + char +c.x)
 
 def hello():
-'''Print hello world to the console in random colors.'''
+    '''Print hello world to the console with each charecter in random colors.'''
 
-    
     try:
         print(c.clear)
         while True:
-           #print(c.rc() + "Hello " + c.rc() + "World" + c.x)
+           #     old code   ------->   print(c.rc() + "Hello " + c.rc() + "World" + c.x)
            print(colored("Hello World!"))
     except KeyboardInterrupt:
         exit()
