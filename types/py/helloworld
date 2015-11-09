@@ -43,7 +43,7 @@ if __name__ == '__main__':
         if option == "-m":
             multi(message)
         elif option == "-c":
-            colored(messsage);
+            colored(message);
         else:
             plain(message);
     except KeyboardInterrupt:
