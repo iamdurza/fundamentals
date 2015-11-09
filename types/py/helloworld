@@ -26,25 +26,25 @@ def colored(message):
 if __name__ == '__main__':    
     import sys 
 
+    who = "wold"
+    option = ""
+    message = ""
 
-#1
     if len(sys.argv) > 2:
         option = sys.argv[1]
         who = sys.argv[2]
+    elif len(sys.argv) == 2:
+        if sys.argv[1].startswith("-"):
+                option = sys.argv[1]
+            else:
+                who = sys.argv[1];
+        
+    message = "Hello " + who + "!";
 
-
-    if len(sys.argv) 
-
-
-
-
-
-
-#                                    |
-#                                   \_/
-#-------->       U MUST WRITE 'helloworld c' FOR DIS TO WORK!!!!   <------------
-#
-#                               ^
-#                               |
-#                               |
-#                               |
+    try:
+        if option == "-m":
+            multi(message)
+        elif option == "-c":
+            colored(messsage);
+        else:
+            plain(message);
