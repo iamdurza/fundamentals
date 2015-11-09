@@ -1,29 +1,43 @@
 #!/usr/bin/env python3
 
 import skilstak.colors as c
+import time
 
+def plain(message):
+    '''Clears the screen & says 'Hello World'.'''
+    print(c.clear + c.rc() + message + c.reset)
 
-def print_colored(word):
-    for char in word:
-      print(c.rc() + char +c.x)
-                            #^ , end=''
-def colored_hello():
+def multi(message):
     '''Print hello world to the console with each charecter in random colors.'''
-
+    
     try:
-        print(c.clear)
         while True:
-           #     old code   ------->   print(c.rc() + "Hello " + c.rc() + "World" + c.x)
-           print_colored("Hello World!")
+            print(c.clear + c.multi(message))
     except KeyboardInterrupt:
         exit()
 
+def colored(message):
+    '''Prints like nyan.'''
+    print(c.clear)
+    while True:
+        print(c.rc() + message +c.x, end=" ")
+
+
 if __name__ == '__main__':    
     import sys 
-    if len(sys.argv) > 1 and sys.argv[1].startswith("c"):
-        colored_hello()
-    else:
-        pass
+
+
+#1
+    if len(sys.argv) > 2:
+        option = sys.argv[1]
+        who = sys.argv[2]
+
+
+    if len(sys.argv) 
+
+
+
+
 
 
 #                                    |
@@ -34,6 +48,3 @@ if __name__ == '__main__':
 #                               |
 #                               |
 #                               |
-#
-
-
