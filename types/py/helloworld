@@ -10,9 +10,10 @@ def plain(message):
 def multi(message):
     '''Print hello world to the console with each charecter in random colors.'''
     
-    try:
-        while True:
+    while True:
             print(c.clear + c.multi(message))
+            time.sleep(0.5)
+    
     except KeyboardInterrupt:
         exit()
 
@@ -20,13 +21,13 @@ def colored(message):
     '''Prints like nyan.'''
     print(c.clear)
     while True:
-        print(c.rc() + message +c.x, end=" ")
+        print(c.rc() + message + c.x, end=" ")
 
 
 if __name__ == '__main__':    
     import sys 
 
-    who = "wold"
+    who = "world"
     option = ""
     message = ""
 
