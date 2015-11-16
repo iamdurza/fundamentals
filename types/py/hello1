@@ -3,14 +3,28 @@
 import skilstak.colors as c
 import time
 
-   
+    print(message)   
 
-def plain(message):
-    '''Clears the screen & says 'Hello World'.'''
-    print(c.clear + c.rc() + message + c.reset)
+def print_foreva(message):
+    ''' Prints <message> to the screen forever (without line return)
+    
+    
+    Args:
+        message (str): message to print forever
+        
+        
+        '''
+    print(message,end=' ')
 
 def multi(message):
-    '''Print hello world to the console with each charecter in random colors.'''
+    '''Print <message> to the console with each charecter in random colors.
+    
+    
+    Args:
+        message (str): message to print
+        
+        
+        '''
     
     while True:
             print(c.clear + c.multi(message))
