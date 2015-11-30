@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 if __name__ == '__main__':    
-    import helloworld 
-    message = "Hello " + who + "!";
+    import helloworld as hello
+
+    name, option = hello.parse_args()
+    message = "Hello " + name + "!"
 
     try:
         if option == "-m":
-            multi(message)
+            hello.print_multi(message)
         elif option == "-c":
-            colored(message);
+            hello.print_colored(message)
         else:
-            plain(message);
+            hello.print_plain(message)
     except KeyboardInterrupt:
-        ()
+        exit(0)
