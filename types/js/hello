@@ -9,8 +9,10 @@ var c = require("skilstak-colors");
 //}
 
 
-var printPlain = function () {
-  console.log(c.clear + c.x + "Hello World");
+var printRed = function () {
+  console.log(c.clear + c.x + c.red + "Hello World");
 }
 
-
+var printNyan = function () {
+  console.log(c.clear + c.x + c.rc() +  "Hello World");
+}
