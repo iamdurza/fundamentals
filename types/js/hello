@@ -4,7 +4,7 @@
 
 var c = require("skilstak-colors");
 
-function PrintPLain() {
+var printPlain = function () {
   console.log(c.clear + c.x + "Hello World");
 }
 
