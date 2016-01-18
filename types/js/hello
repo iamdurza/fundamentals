@@ -4,9 +4,9 @@
 
 var c = require("skilstak-colors");
 
-//function PrintPLain() {
-//  console.log(c.clear + c.x + "Hello World");
-//}
+function PrintPLain() {
+  console.log(c.clear + c.x + "Hello World");
+}
 
 
 var printRed = function () {
@@ -15,4 +15,8 @@ var printRed = function () {
 
 var printNyan = function () {
   console.log(c.clear + c.x + c.rc() +  "Hello World");
+}
+
+var printMulti = function () {
+  console.log(c.clear + c.multi("MULTI") + c.x)
 }
