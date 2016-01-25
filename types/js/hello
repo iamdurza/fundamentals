@@ -11,19 +11,19 @@ var printPlain = function (message) {
 printPlain("Hello World")
 
 var printRed = function (message) {
-  console.log(c.clear + c.x + c.red + message);
+  console.log(c.clear + c.red + message + c.x);
 }
 
 printRed("Hello World")
 
 var printNyan = function (message) {
-  console.log(c.clear + c.x + c.rc() + message);
+  console.log(c.clear + c.rc() + message + c.x);
 }
 
 printNyan("Hello World")
 
 var printMulti = function (message) {
-  console.log(c.clear + c.multi("MULTI") + message + c.x);
+  console.log(c.clear + c.multi(message) + c.x);
 }
 
 printMulti("Hello World")
